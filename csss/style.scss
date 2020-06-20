@@ -5,6 +5,20 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(4, 63, 172); 
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgb(8, 176, 253); 
+}
+
 body{
     margin: 0;
     overflow: hidden;
