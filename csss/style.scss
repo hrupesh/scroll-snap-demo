@@ -88,6 +88,25 @@ section {
     }
 }
 
+@media(max-width:600px){
+    section{
+        padding:4rem;
+        height: calc(100vh - 8rem);
+
+        p{
+            width: 100%;
+        }
+    }
+
+    .container-x{
+        section{
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(5px);
