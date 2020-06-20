@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizontal Scroll Slider Demo</title>
-    <link rel="stylesheet" href="./csss/style.css">
-</head>
-<body>
-  <div class="nav" id="nav2">
-    ⬅
-  </div>
-  <script>
-    var nav = document.querySelector("#nav2");
-    nav.addEventListener("click", () => {
-      window.location.href = '/scroll-snap-demo/index.html'
-    });
-  </script>
+    <link rel="stylesheet" href="./csss/style.css" />
+  </head>
+  <body>
+    <div class="nav" id="nav2">
+      ⬅
+    </div>
+    <script>
+      var nav = document.querySelector("#nav2");
+      nav.addEventListener("click", () => {
+        window.location.href = "/scroll-snap-demo/index.html";
+      });
+    </script>
     <div class="container-x">
-        <section>
-          <h1>Scroll Horizontically <br>  Title 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </section>
-        <section>
-          <h1>Scroll Horizontically <br> Title 2</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </section>
-        <section>
-          <h1>Scroll Horizontically <br> Title 3</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </section>
-      </div>
-</body>
+      <section>
+        <h1>
+          Scroll Horizontically <br />
+          Title 1
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </section>
+      <section>
+        <h1>
+          Scroll Horizontically <br />
+          Title 2
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </section>
+      <section>
+        <h1>
+          Scroll Horizontically <br />
+          Title 3
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </section>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js"
+      integrity="sha256-6Z1pVtavnUt7YMua8WvatI1NbhECmyL8DMb8DDqrnKg="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var Scrollbar = window.Scrollbar;
+
+      Scrollbar.init(document.querySelector(".container"));
+      Scrollbar.init(document.querySelector(".container-x"));
+    </script>
+  </body>
 </html>
