@@ -4,9 +4,10 @@
     transition: all 1s;
 }
 
-body,html{
+body{
     margin: 0;
-    padding: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 section{
@@ -15,6 +16,7 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
 
     p{
         width: 75%;
@@ -34,15 +36,15 @@ section{
     }
 
     &:nth-child(1){
-        background: #212121 url('https://picsum.photos/2144');
+        background: #212121 url('https://picsum.photos/1920/');
     }
 
     &:nth-child(2){
-        background: #212121 url('https://picsum.photos/2444');
+        background: #212121 url('https://picsum.photos/1440/1080/');
     }
 
     &:nth-child(3){
-        background: #212121 url('https://picsum.photos/2600/2600');
+        background: #212121 url('https://picsum.photos/1920/1080/');
     }
 }
 
