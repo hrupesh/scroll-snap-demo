@@ -128,7 +128,7 @@ section:nth-child(3) {
   padding: 0 0.8rem;
   font-size: 4rem;
   color: #ffffff;
-  background: #585858;
+  background: rgba(88, 88, 88, 0.657);
   border-radius: 100%;
   font-weight: 900;
   z-index: 999;
